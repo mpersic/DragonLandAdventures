@@ -3,17 +3,22 @@ using UnityEngine;
 public class Spikehead : EnemyDamage
 {
     [Header("SpikeHead Attributes")]
-    [SerializeField] private float speed;
-    [SerializeField] private float range;
-    [SerializeField] private float checkDelay;
-    [SerializeField] private LayerMask playerLayer;
+    [SerializeField] 
+    private float speed;
+    [SerializeField] 
+    private float range;
+    [SerializeField] 
+    private float checkDelay;
+    [SerializeField] 
+    private LayerMask playerLayer;
     private Vector3[] directions = new Vector3[4];
     private Vector3 destination;
     private float checkTimer;
     private bool attacking;
 
     [Header("SFX")]
-    [SerializeField] private AudioClip impactSound;
+    [SerializeField] 
+    private AudioClip impactSound;
 
     private void OnEnable()
     {

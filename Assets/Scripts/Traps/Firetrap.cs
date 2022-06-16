@@ -3,16 +3,20 @@ using System.Collections;
 
 public class Firetrap : MonoBehaviour
 {
-    [SerializeField] private float damage;
+    [SerializeField] 
+    private float damage;
 
     [Header("Firetrap Timers")]
-    [SerializeField] private float activationDelay;
-    [SerializeField] private float activeTime;
+    [SerializeField] 
+    private float activationDelay;
+    [SerializeField] 
+    private float activeTime;
     private Animator anim;
     private SpriteRenderer spriteRend;
 
     [Header("SFX")]
-    [SerializeField] private AudioClip firetrapSound;
+    [SerializeField] 
+    private AudioClip firetrapSound;
 
     private bool triggered; //when the trap gets triggered
     private bool active; //when the trap is active and can hurt the player

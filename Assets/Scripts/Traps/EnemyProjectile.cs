@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class EnemyProjectile : EnemyDamage
 {
-    [SerializeField] private float speed;
-    [SerializeField] private float resetTime;
+    [SerializeField] 
+    private float speed;
+    [SerializeField] 
+    private float resetTime;
     private float lifetime;
     private Animator anim;
     private BoxCollider2D coll;

@@ -2,13 +2,17 @@ using UnityEngine;
 
 public class ArrowTrap : MonoBehaviour
 {
-    [SerializeField] private float attackCooldown;
-    [SerializeField] private Transform firePoint;
-    [SerializeField] private GameObject[] arrows;
+    [SerializeField] 
+    private float attackCooldown;
+    [SerializeField] 
+    private Transform firePoint;
+    [SerializeField] 
+    private GameObject[] arrows;
     private float cooldownTimer;
 
     [Header("SFX")]
-    [SerializeField] private AudioClip arrowSound;
+    [SerializeField] 
+    private AudioClip arrowSound;
 
     private void Attack()
     {

@@ -3,23 +3,29 @@ using UnityEngine;
 public class EnemyPatrol : MonoBehaviour
 {
     [Header ("Patrol Points")]
-    [SerializeField] private Transform leftEdge;
-    [SerializeField] private Transform rightEdge;
+    [SerializeField] 
+    private Transform leftEdge;
+    [SerializeField] 
+    private Transform rightEdge;
 
     [Header("Enemy")]
-    [SerializeField] private Transform enemy;
+    [SerializeField] 
+    private Transform enemy;
 
     [Header("Movement parameters")]
-    [SerializeField] private float speed;
+    [SerializeField] 
+    private float speed;
     private Vector3 initScale;
     private bool movingLeft;
 
     [Header("Idle Behaviour")]
-    [SerializeField] private float idleDuration;
+    [SerializeField] 
+    private float idleDuration;
     private float idleTimer;
 
     [Header("Enemy Animator")]
-    [SerializeField] private Animator anim;
+    [SerializeField] 
+    private Animator anim;
 
     private void Awake()
     {

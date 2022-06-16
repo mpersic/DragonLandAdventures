@@ -2,10 +2,14 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    [SerializeField] private float attackCooldown;
-    [SerializeField] private Transform firePoint;
-    [SerializeField] private GameObject[] fireballs;
-    [SerializeField] private AudioClip fireballSound;
+    [SerializeField] 
+    private float attackCooldown;
+    [SerializeField] 
+    private Transform firePoint;
+    [SerializeField] 
+    private GameObject[] fireballs;
+    [SerializeField] 
+    private AudioClip fireballSound;
 
     private Animator anim;
     private PlayerMovement playerMovement;

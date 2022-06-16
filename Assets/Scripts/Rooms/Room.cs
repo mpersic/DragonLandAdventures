@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Room : MonoBehaviour
 {
-    [SerializeField] private GameObject[] enemies;
+    [SerializeField] 
+    private GameObject[] enemies;
     private Vector3[] initialPosition;
 
     private void Awake()

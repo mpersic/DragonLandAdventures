@@ -3,15 +3,20 @@
 public class PlayerMovement : MonoBehaviour
 {
     [Header ("Movement Parameters")]
-    [SerializeField] private float speed;
-    [SerializeField] private float jumpPower;
+    [SerializeField] 
+    private float speed;
+    [SerializeField] 
+    private float jumpPower;
 
     [Header("Layers")]
-    [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private LayerMask wallLayer;
+    [SerializeField] 
+    private LayerMask groundLayer;
+    [SerializeField] 
+    private LayerMask wallLayer;
 
     [Header("Sounds")]
-    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] 
+    private AudioClip jumpSound;
 
     private Rigidbody2D body;
     private Animator anim;
